@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>maven.project.two</groupId>
+  <artifactId>module-2</artifactId>
+  <version>0.1</version>
+  
+  <name>name of the project</name>
+  <url>http://project.url.page</url>
+  
+  <!-- Developer's information -->
+    <developers>
+      <developer>
+        <id>krazyhermit</id>
+        <name>Mohammad N Haq</name>
+        <organization>Organization Name</organization>
+        <organizationUrl>http://my.own.org</organizationUrl>
+        <roles>
+          <role>developer</role>
+        </roles>
+      </developer>
+    </developers>
+    
+    <dependencies>
+       <dependency>
+    	 <groupId>maven.project.one</groupId>
+     	 <artifactId>module-1</artifactId>
+         <version>0.1</version>
+       </dependency>
+    </dependencies>
+  
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
