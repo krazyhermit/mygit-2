@@ -8,6 +8,5 @@ public class MySUM {
 		HelloMaven testSum = new HelloMaven();
 		System.out.println("The sum is "+testSum.sum(2, 3));
 		testSum.printMethod();
-		System.out.println("test from 'MySUM' class");
 	}
 }
